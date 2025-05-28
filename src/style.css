@@ -1,0 +1,11 @@
+body {
+    background-image: url("https://t4.ftcdn.net/jpg/13/55/50/33/360_F_1355503309_LnbSh7xoHHnzeEihOGx5MBGjUPx5zU4E.jpg");
+}
+
+.container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px ;
+
+}
