@@ -31,7 +31,7 @@ setInterval(function () {
 
 function updateTime(event){
     let cityTimeZone= event.target.value;
-    let cityName=cityTimeZone.replace("-"," ").split("/")[1];
+    let cityName=cityTimeZone.replace("_"," ").split("/")[1];
     let cityTime= moment().tz(cityTimeZone);
     let citiesElement= document.querySelector("#cities");
 
@@ -39,9 +39,9 @@ function updateTime(event){
     <div class="city">
         <div><h2>${cityName}</h2>
             <div class="date">${cityTime.format("MMMM Do YYYY")}</div></div>
-            <div class="time">${cityTime.format("h:mm:ss")}<small>${cityTime.format("A")}</small></div>
+            <div class="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format("A")}</small></div>
     </div>`
 };
 
 let citiesSelect=document.querySelector("#city");
-citiesSelect.addEventListener("change", updateCity);
+citiesSelect.addEventListener("change", updateTime);
